@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Configuration for database connection
+ *
+ */
+
+$host       = getenv("MYSQL_SERVICE_HOST");
+$username   = getenv("MYSQL_USERNAME");
+$password   = getenv("MYSQL_PASSWORD");
+$dbname     = getenv("MYSQL_DATABASE");
+$dsn        = "mysql:host=$host;dbname=$dbname";
+$options    = array(
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+              );
