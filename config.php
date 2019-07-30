@@ -5,7 +5,7 @@
  *
  */
 
-$host       = getenv("MYSQL_SERVICE_HOST");
+$host       = getenv("MYDB_SERVICE_HOST");
 $username   = getenv("MYSQL_USERNAME");
 $password   = getenv("MYSQL_PASSWORD");
 $dbname     = getenv("MYSQL_DATABASE");
